@@ -1,0 +1,141 @@
+<!--
+    
+Casey L. Raiford
+21 Nov 2021
+CSC102 Online
+-->
+
+
+<!-- states the document type as html-->
+<!DOCTYPE html>
+<!-- specifices the language as English-->
+<html lang="en">
+
+
+<!--changing the H1 font from default-->
+<style>
+
+h1 {
+
+        font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+</style>
+<!-- defines the header-->
+<head>
+
+    <!--defines the title-->
+        <title>Countdown to Blast Off</title>
+
+<!-- switches frmo html to javascript-->
+        <script>
+     
+            function StartTheCountdown()
+            {
+
+                //Purpose of this function is to start the countdown
+                //and control the countdown
+
+                //Declare variables
+
+                //display on screen
+                var countdown = 10;
+                // used to track actual time
+                // 1000 = 1 second in milliseconds
+                var timeout = 10000;
+                // use the set time out function for countdown
+                setTimeout(() => {
+                    document.getElementById("CountdownDisplay").innerHTML = "BLASTOFF!";
+                    countdown = countdown - 1;
+                }, timeout)
+
+                timeout = timeout - 1000;
+                //do this 9 more times
+                setTimeout(() => {
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+
+                 //do this 8 more times
+                setTimeout(() => {
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+                
+                 //do this 7 more times
+                setTimeout(() => {
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+                
+                 //do this 6 more times
+                setTimeout(() => {
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+                
+                 //do this 5 more times
+                setTimeout(() => {
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+                
+                 //do this 4 more times
+                setTimeout(() => {
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+                
+                 //do this 3 more times
+                setTimeout(() => {
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+                
+                 //do this 2 more times
+                setTimeout(() => {
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+                
+                 //do this 1 more times
+                setTimeout(() => {
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+
+                setTimeout(() => {
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+
+            }
+
+
+        </script>
+</head>
+
+<!--Changing page background color here-->
+<body style="background-color:powderblue;">
+    <h1>Countdown to Blast Off!</h1>
+    <p>This application will start the countdown</p>
+        <h2>Countdown</h2>
+        <!--this is a button to start the countdown
+        The button calls the function StartTheCountdown() when clicked
+        -->
+        <button tpe="button" onclick="StartTheCountdown()">Start Countdown</button>
+        <p id="CountdownDisplay">10</p>
+</body>
+</html>
