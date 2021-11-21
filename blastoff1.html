@@ -121,6 +121,13 @@ h1 {
                 }, timeout)
                 timeout = timeout - 1000;
 
+                // this one displays zero
+                setTimeout(() => {
+                    document.getElementById("CountdownDisplay").innerHTML = countdown;
+                    countdown = countdown - 1;
+                }, timeout)
+                timeout = timeout - 1000;
+
             }
 
 
